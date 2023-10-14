@@ -6,8 +6,8 @@
   <title>Invitación Baby Shower</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 
-  <!-- Referencia a jQuery (ajusta la ruta según la ubicación de tu archivo) -->
-  <script src="ruta/a/tu/carpeta/jquery-3.7.1.min.js"></script>
+  <!-- Referencia a jQuery en la misma carpeta que tu HTML -->
+  <script src="jquery-3.7.1.min.js"></script>
 
   <!-- Referencias a Lightbox2 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
@@ -24,7 +24,7 @@
     </a>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Script adicional para cambiar la imagen en caso de error -->
   <script>
     function alternateImage() {
       // Si la primera imagen falla, intentamos cargarla con el nombre alternativo
@@ -33,3 +33,4 @@
   </script>
 </body>
 </html>
+
