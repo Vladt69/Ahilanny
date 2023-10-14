@@ -8,13 +8,20 @@
 </head>
 <body>
   <div class="invitation-container">
-    <img src=Baby Shower Sorpresa!.jpg alt=Invitación Baby Shower>
-    <h1>Descarga y agregalo al Calendario</h1>
-    <a href="BabyShower.ics" download>
-      <button>Agragar al Calendario</button>
+    <!-- Intentaremos cargar la imagen con ambos nombres -->
+    <img src="Baby Shower Sorpresa!.jpg" alt="Invitación Baby Shower" onerror="alternateImage()">
+    <h1>Descarga y Agrega al Calendario</h1>
+    <a href="BabyShower.ics" download="BabyShower.ics">
+      <button>Agregar al Calendario</button>
     </a>
   </div>
 
   <script src="script.js"></script>
+  <script>
+    function alternateImage() {
+      // Si la primera imagen falla, intentamos cargarla con el nombre alternativo
+      document.querySelector('img').src = 'Invitacion Baby Shower.jpg';
+    }
+  </script>
 </body>
 </html>
